@@ -18,7 +18,11 @@ private:
                         {'4', '5', '6'},
                         {'7', '8', '9'}
     };
-    vector < int >moves = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+      vector < int >moves;
+	for(int i=1;i<10;i++)
+      {
+        moves.push_back(i);
+      }
     vector < int >::iterator it1, it2;
     char turn = 'X';
     int row = 9, col = 9, draw = 0;
